@@ -1,7 +1,6 @@
 import './App.css';
-
-
-import NavBar from './components/NavBar.jsx';
+import NavBar from './components/NavBar';
+import ItemListContainer from "./components/containers/ItemListContainer";
 
 function App() {
 
@@ -9,12 +8,13 @@ function App() {
 
     <div className="App">
 
-    < NavBar/>
-    <h1> Plantastik </h1>
-    <br/><br/><br/>
-    <p> Tieda: especializada en venta de bulbos florales, semillas y articulos de jardin </p>
-    
+        < NavBar />
 
+              <h1> Plantastik </h1>
+              <br/><br/>
+              
+        < ItemListContainer greeting= "ACA VAN A ESTAR LAS CARDS CON PRODUCTOS" />
+        
     </div>
   );
 }

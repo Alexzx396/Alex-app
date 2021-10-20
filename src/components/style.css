@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body { 
+    background: white;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container div{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.container div h1{
+    position : absolute;
+    top: 30%;
+    font-family: 'zilla salb';
+    font-weight: 100%;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.container > div img {
+    width: clamp(10em, 100%, 30 em);
+}
+
+.container > button{
+    align-self: center;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+
+}
+
+.container > button:hover{
+    opacity: 0.8;
+}
+
+@media (max-whit: 700px) and (orientation: lanscape){
+    .container > div img{ whith: clamp(10em, 100%, 20em);}
+}
+
+
+.CartIcon {
+    height: 2rem;
+}
+
+.img .CartIcon {
+    background-color: #fff;
+    text-decoration: none;
+    margin-right: 3rem;
+    padding: 0.3rem 0.7rem;
+    border: none;
+}
+
+.CartIcon img {
+    width: 3rem;
+    padding-top: 0.5rem;
+}
