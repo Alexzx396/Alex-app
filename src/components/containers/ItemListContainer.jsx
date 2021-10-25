@@ -1,6 +1,15 @@
+import React from 'react'
+import ItemCount from './ItemCount';
 
-function ItemListContainer({ greeting }) {
-    return <p> {greeting} </p>;
+export default function ItemListContainer({ greeting }) {
+    const handleClick=(total) => {
+        alert(`la cantidad agregada es ${total}`);
 }
+    return (
+        <div>
+            {greeting}
+            <ItemCount stock={8} initial={1} onAdd={handleClick} />
+        </div>
+    )
+};
 
-export default ItemListContainer

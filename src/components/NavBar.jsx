@@ -2,6 +2,7 @@ import React from 'react'
 import "./style.css";
 // import logo from "./components/images/logo-plantastik.jpeg";
 import CartWidget from  './CartWidget';
+import {Col} from 'react-bootstrap';
 
 function NavBar() {
     
@@ -22,7 +23,7 @@ function NavBar() {
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#"> <span class="sr-only"></span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Nosotros</a>
@@ -48,10 +49,10 @@ function NavBar() {
   
       
     </ul>
-  <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  </form>
+  <Col class="justify-content-end" id="buscador">
+      <input class="form-control mr-sm-2 " type="search" placeholder="escribe algo..." aria-label="Buscar" />
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"  > Buscar </button>
+  </Col>
 
 </div>
   </nav>
