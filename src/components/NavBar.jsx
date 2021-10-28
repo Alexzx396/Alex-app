@@ -10,7 +10,7 @@ function NavBar() {
 
 <section>
 <div>
-    git 
+
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
 

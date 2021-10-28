@@ -6,14 +6,14 @@ export default function ItemCount({stock, initial, onAdd}) {
 
   
    const disminuirClick =() => {
-       contador > parseInt(initial) 
-       ? setContador(contador -1) 
+       contador > (initial) 
+       ? setContador(contador - 1) 
        : alert(`NO PUEDE ELEGUIR MENOR QUE ${initial}`);
-   };
+   }
 
    const aumentarClick=() => {
-        contador < parseInt(stock)  
-       ? setContador(contador +1) 
+        contador < (stock)  
+       ? setContador(contador + 1) 
        : alert(`El STOCK DE PRODUCTOS ES ${stock}`);
    };
    
