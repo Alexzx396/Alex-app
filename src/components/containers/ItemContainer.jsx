@@ -14,7 +14,7 @@ export default function ItemContainer() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim blanditiis est sit omnis ipsa, vitae, 
                 eveniet eum laborum aut magni rem libero pariatur assumenda deserunt unde minima! Laborum, quasi numquam?
             </Card.Text>
-            <ItemCount stock={8} initial={1} />
+            <ItemCount stock="8" initial="1" />
         </Card.Body>
         </Card>
     )

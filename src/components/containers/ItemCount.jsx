@@ -5,27 +5,27 @@ export default function ItemCount({stock, initial, onAdd}) {
    const [contador, setContador] = useState(initial);
 
   
-   const disminuirClick = () => {
-       contador > 1 
+   const disminuirClick =() => {
+       contador > parseInt(initial) 
        ? setContador(contador -1) 
-       : alert("NO PUEDE ELEGUIR MENOR QUE 1");
+       : alert(`NO PUEDE ELEGUIR MENOR QUE ${initial}`);
    };
 
    const aumentarClick=() => {
         contador < parseInt(stock)  
        ? setContador(contador +1) 
-       : alert('El STOCK DE PRODUCTOS ES ${stock}');
+       : alert(`El STOCK DE PRODUCTOS ES ${stock}`);
    };
    
     return (
         <div>
             <InputGroup className="mb-3">
-                <Button variant="outline-primary" onClick={disminuirClick} disabled={contador >1 }>
+                <Button variant="outline-primary" onClick={disminuirClick}>
                 -
                 </Button>
                 <FormControl 
                 className="text-center" 
-                aria-label ="Example text whit two button addons " 
+                aria-label ="Example text whit two button addons" 
                 value={contador} />
                 <Button variant="outline-primary" onClick={aumentarClick}>
                 +

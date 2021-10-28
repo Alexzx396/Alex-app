@@ -26,7 +26,7 @@ export default function ItemListContainer({ greeting }) {
     return (
         <div>
             {greeting}
-            <ItemCount stock={8} initial={1} onAdd={handleClick} />
+            <ItemCount stock="50" initial="2" onAdd={handleClick} />
             <br /> <br /> <br />
             <ItemList users = {users}/> 
         </div>
